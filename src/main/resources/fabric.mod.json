@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "signfix",
+  "version": "${version}",
+  "name": "SignFix",
+  "description": "Fixes the signs not loading properly on 1.18+",
+  "authors": [
+    "zegevlier"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "signfix/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.zegs.signfix.Signfix"
+    ]
+  },
+  "mixins": [
+    "signfix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric": "*",
+    "minecraft": ">=1.18"
+  }
+}
